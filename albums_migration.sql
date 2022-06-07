@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS albums (
     PRIMARY KEY (id),
     UNIQUE (artist_name, record_name)
 );
--- DESCRIBE albums;
+DESCRIBE albums;
 
--- INSERT INTO albums (artist_name, record_name, genre)
--- VALUES ('Dream Theater','Metropolis Part 2', 'Progressive Rock');
+INSERT INTO albums (artist_name, record_name, genre)
+VALUES ('Dream Theater','Metropolis Part 2', 'Progressive Rock');
