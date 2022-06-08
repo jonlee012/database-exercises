@@ -32,7 +32,8 @@ WHERE last_name LIKE 'E%' AND last_name LIKE '%E';
 SELECT * FROM employees WHERE last_name LIKE 'E%E';
 
 
-SELECT CONCAT(first_name, ' ', last_name) AS name, CONCAT('They have been working at the company for ', DATEDIFF(NOW(), hire_date) / 365, ' years') as years_at_company_message
+SELECT CONCAT(first_name, ' ', last_name) AS name,
+       CONCAT('They have been working at the company for ', DATEDIFF(NOW(), hire_date) / 365, ' years') AS years_at_company_message
 FROM employees WHERE birth_date like '%12-25'
                  AND hire_date like '1990%' ORDER BY birth_date, hire_date DESC;
 
