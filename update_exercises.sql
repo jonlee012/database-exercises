@@ -3,3 +3,7 @@ SELECT 'all albums' as 'exercise';
 SELECT * FROM albums;
 
 
+
+
+
+
