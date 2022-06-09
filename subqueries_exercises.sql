@@ -44,6 +44,6 @@ FROM employees
 WHERE emp_no IN(
     SELECT emp_no
     FROM salaries
-    WHERE salary < (SELECT MAX(SALARY) FROM employees)
+    WHERE salary = (SELECT MAX(SALARY) FROM employees)
     );
 
